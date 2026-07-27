@@ -1,0 +1,11 @@
+/* Method 1  
+#myid p{
+    color: green;
+} 
+*/
+
+/* Method 2: Attribute Selector */
+div[id="myid"] p{
+    color: green;
+    text-decoration: green double underline;
+}

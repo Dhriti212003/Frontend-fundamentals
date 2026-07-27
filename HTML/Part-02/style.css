@@ -1,0 +1,175 @@
+/* 
+
+    1. Universal selector : to select  everything in the document
+        eg : 
+            *{
+
+            }
+
+    2. Class selector : to selct an element based on their class attribute
+        eg : 
+            .myclass{
+
+            }
+    
+    3. Descendent Selector
+        eg : selects all paragraphs inside divs
+            div p{
+            
+            } 
+    
+    4. Adjacent Selector
+        eg : Heading3 that comes immediately after any paragraph
+            p + h3{
+            
+            } 
+
+    5. Child Combinator- only direct descendent
+        eg : selects all buttons which is different
+            span > button{
+            
+            }
+
+    6. Attribute Selector
+        eg : selects elements based on the presence or value of a given attribute
+            input[attr="value"]{
+            
+            }
+
+    7. Pseudo class
+        eg : A keyword added to a selector that special state of the selected element(s)
+            element pseudoclass
+            :hover
+            :active 
+            :checked
+            :nth-of-type
+
+    8. Pseudo element
+        eg : A keyword added to a selector that lets you style a specific part of the selected element(s)
+            element pseudoclass
+            ::first-letter
+            ::first-line
+            ::selection
+        
+    9. Selector Specificity
+        i)What is specificity?
+        Ans : Specificity is an algorithm that calculates the weight that is applied to a given CSS declaration.
+              Categories of Specificity
+                - id
+                - class, attribute & pseudo-class
+                - element & pseudo-element
+              a.} id > class > element
+                  eg : #myid > .myclass > p
+              b.} more selectors > less selector
+              c.} if specificity same => cascading 
+
+              Inline specificity : more specificity than id
+              - So inline style > id > class, attributes & pseudo-class > element & pseudo-element
+    
+    9.!important : to show the most specific thing in document
+        eg : 
+             h2{
+                background-color: blue !important
+             }
+
+         
+
+
+*/
+
+*{
+    font-family: 'Courier New'; 
+}
+
+h1, 
+h3{
+    color: #9b2420;
+}
+#login{
+    background-color: white;
+}
+#signup{
+    background-color: #9b2420;
+    color: white;
+}
+.upvote{
+    background-color: green;
+    color:aliceblue
+}
+
+/* Descendent selector */
+.post a{
+    color:purple;
+    background-color: yellow;
+}
+
+nav ul li a{
+    color: pink;
+}
+
+/*Adjacent sibling combinator */
+p+h3{
+    text-decoration: underline;
+}
+
+.upvote + button{
+    background-color: cornflowerblue;
+}
+
+/* Child Combinator */
+div > input{
+    background-color: darksalmon;
+}
+
+/* Attribute Selector */
+input[type="text"]{
+    color:red;
+}
+input[type="password"]{
+    color:green;
+}
+input[type]{
+    background-color: aliceblue;
+}
+
+/* Pseudo class */
+button:hover{
+    color:white;
+    background-color: black;
+
+}
+h3:hover{
+    text-decoration: none;
+}
+button:active{
+    background-color: pink;
+    color: black;
+}
+
+p:active{
+    font-weight: bold;
+    color:green;
+}
+input[type="radio"]:checked + label{
+    color:red;
+    font-weight: bold;
+}
+div:nth-of-type(2n){
+    background-color: blanchedalmond;
+}
+
+/* Pseudo element */
+h1::first-letter{
+    color:black;
+}
+
+p::first-line{
+    color:purple;
+}
+p::selection{
+    background-color: rgb(140, 221, 140);
+}
+
+h3{
+    background-color: yellow;
+}

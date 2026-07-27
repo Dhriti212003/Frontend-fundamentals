@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="/action">
+        <div>
+            <label for="username">Username : </label> 
+            <input type="text" id="username" placeholder="enter username" name="username"/> 
+       </div>
+       <div>
+            <label for="password">password : </label> 
+            <input type="password" id="password" placeholder="enter password" name="password"/>
+       </div>
+       <div>
+            <label for="age">age : </label>
+            <input type="number" id="age" placeholder="enter the age" name="age"/>
+       </div>
+       <div>
+            <input type="checkbox" id="ageCheck" placeholder="enter the age" name="ageCheck"/>
+            <label for="ageCheck">I'm 18&plus;</label>
+      </div>
+      <div>
+            <input type="radio" id="apple" name="fruit" value="apple"/>
+            <label for="apple">Apple</label>
+            <input type="radio" id="orange" name="fruit" value="orange"/>
+            <label for="orange">Orange</label>
+       </div>
+       <div>
+            <select name="profession" id="profession">
+                <option value="student">Student</option>
+                <option value="dev">Development</option>
+            </select>
+        </div> 
+        <div>
+            <label for="volume">Volume : </label>
+            <input type="range" id="volume"  min="0" max="100" step="10" name="vol"/>
+       </div>
+       <div>
+        <label for="feedback">Please give us your feedback : </label>
+        <textarea name="feedback" id="feedback" rows="30" col="20"></textarea>
+    </div>
+       
+       <button>Submit</button>
+       <button type="reset">Reset</button>
+    </form>
+    <form action="https://www.youtube.com/results">
+        <input type="text" placeholder="search in youtube" name="search_query" />
+        <button>search</button>
+      </form>
+</body>
+</html>

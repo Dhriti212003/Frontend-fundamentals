@@ -1,0 +1,145 @@
+<!-- 
+    Practice Questions
+      1. Recreate the following table using HTML
+      2. Recreate the following form using HTML
+      3. Recreate the following form using HTML
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Qs</title>
+</head>
+<body>
+
+    <!-- 1. Table -->
+    <table border="black">
+        
+            <tr>
+                <th rowspan="6">Info</th>
+                <th rowspan="2">Name</th>
+                <th colspan="2">Address</th>
+            </tr>
+            <tr>
+                <th>City</th>
+                <th>House</th>
+            </tr>
+        
+        
+            <tr>
+                <td>A</td>
+                <td>Delhi</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>Mumbai</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>Bangalore</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>Kolkata</td>
+                <td>4</td>
+            </tr>
+        
+    </table>
+    <br/>
+    <hr/>
+
+    <!-- 2. Form-A -->
+    <br/>
+    <form action="/server">
+       <div>
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name">
+        
+       </div>
+       <br/>
+       <div>
+        <label for="sex">Sex: </label>
+        <input type="radio" id="Male" name="sex">
+        <label for="Male">Male</label>
+        <input type="radio" id="Female" name="sex">
+        <label for="Female">Female</label>
+       </div>
+       <br/>
+       <div>
+        <label for="country">Country: </label>
+        <select name="country" id="country">
+            <option>Select an option</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UAE">UAE</option></select>
+       </div>
+       <br/>
+       <div>
+        <label for="message">Message: </label>
+        <br/>
+        <textarea  id="message" name="message" rows="4" cols="40"  ></textarea>
+       </div>
+       <br/>
+       <div>
+        <input type="checkbox" id="subscribe" name="subscription">
+        <label for="subscribe">Subscribed?</label>
+       </div>
+       <br/>
+       <button>Submit</button>
+       <br/>
+    </form>
+    <br/>
+    <hr/>
+
+    <!-- 3. Form-B -->
+    <br/>
+    <form action="/server">
+       <h2>Feedback Form</h2> 
+       <div>
+        <label for="name">Name: </label>
+        <input type="text" id="name" placeholder="Write your name" name="name">
+       </div>
+       <br/>
+       <div>
+        <label for="email">Email: </label>
+        <input type="email" id="email" placeholder="Write your email" name="email">
+       </div>
+       <br/>
+       <div>
+        <label for="messages">Message: </label>
+        <br/>
+        <textarea name="messages" id="messages" rows="4" cols="40"></textarea>
+       </div>
+       <br/>
+       <div>
+        <label for="rate">Rate us out of 5: </label>
+        <br/>
+        <input type="radio" id="1" name="rate"/>
+        <label for="1">1</label>
+        <br/>
+        <input type="radio" id="2" name="rate"/>
+        <label for="2">2</label>
+        <br/>
+        <input type="radio" id="3" name="rate"/>
+        <label for="3">3</label>
+        <br/>
+        <input type="radio" id="4" name="rate"/>
+        <label for="4">4</label>
+        <br/>
+        <input type="radio" id="5" name="rate"/>
+        <label for="5">5</label>
+       </div>
+       <br/>
+       <button>Send your message</button>
+       
+    </form>
+    <br/>
+    <hr/>
+
+</body>
+</html>
