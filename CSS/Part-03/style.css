@@ -1,0 +1,42 @@
+/* div{
+    height:115px;
+    width: 500px;
+    border-color: rgb(197, 231, 219);
+    border-radius: 20px;
+    border-width: 1px;
+    border-style: solid;
+    margin: 20px;
+    padding: 20px;
+    
+}
+h1{
+    border: 2px dashed aqua;
+    display: inline;
+
+}
+
+button{
+    padding:10px;
+    margin: 20px;
+    border: 2px solid rgb(65, 65, 232);
+    background-color: rgb(73, 58, 207);
+    border-radius: 10px;
+} */
+
+h2{
+    border: 2px solid black;
+    width: 50%
+}
+#out{
+    height: 400px;
+    width:400px;
+    background-color: pink;
+    margin: 50px;
+    
+}
+#inn{
+    height: 100px;
+    width:100px;
+    background-color: cornflowerblue;
+    margin-left: 10%
+}
