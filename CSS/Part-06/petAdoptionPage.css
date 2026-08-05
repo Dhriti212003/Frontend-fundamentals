@@ -1,0 +1,56 @@
+#mainHeading{
+     text-align: center;
+}
+#subHeading{
+    font-size: 28px;
+}
+a{
+    color: rgb(224, 151, 14);
+    text-decoration: none;
+    font-size: 24px;
+}
+a:hover{
+    font-size: 25px;
+}
+span{
+    color: rgb(224, 151, 14);
+}
+#mainContainer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    gap:20px
+}
+.card{
+   width:300px;
+   border: 2px solid black;
+   padding:10px;
+   margin:10px;
+   margin-bottom: 20px;
+   border-radius: 20px;
+   box-shadow: 0 2px 4px black;
+}
+.card:hover{
+   box-shadow: 0 4px 8px black;
+}
+.pet-profile{
+   margin:10px;
+   
+}
+.pet-image{
+    height:300px;
+    width:300px;
+    object-fit: cover;
+    border-radius: 20px;
+ 
+}
+@media(max-width:375px){
+    #mainContainer{
+        flex-wrap: wrap;
+    }
+}
+@media(orientation: landscape){
+    #mainContainer{
+        flex-wrap: wrap;
+    }
+}
