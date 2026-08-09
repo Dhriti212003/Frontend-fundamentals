@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+</head>
+<body>
+    <nav class="navbar  bg-body-tertiary fixed-top navbar-expand-lg">
+        <a href="#" class="navbar-brand">Brand Name</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link disabled" href="#">About Us</a>
+        </div>
+        </div>
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search"/>
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </nav>
+    <div class="container">
+        <h2>Bootstrap Demo</h2>
+        <p>
+            2 Broke Girls (stylized as 2 BROKE GIRL$) is an American television sitcom that aired on CBS from September 19, 2011, to April 17, 2017. The series was produced for Warner Bros. Television and created by Michael Patrick King and Whitney Cummings. Set in the Williamsburg neighborhood of Brooklyn in New York City, the show's plot follows the lives of best friends Max Black (Kat Dennings) and Caroline Channing (Beth Behrs). Whereas Caroline was raised as the daughter of a billionaire, Max grew up in a poor and dysfunctional family, resulting in them having different perspectives on life, although together they work in a local diner (Williamsburg Diner) while attempting to raise funds to start a cupcake business.
+
+The series has received a polarized response from critics and audiences alike. The on-screen chemistry between the show's six leads, especially that of Behrs and Dennings, has been praised, while others have criticized the show's reliance on sexualized, drug-related, and racial humor.[1] The series was nominated for 12 Emmy Awards in various categories over its run, winning an Emmy in 2012 for art direction.
+        </p>
+        
+    
+    <button class="btn btn-primary">Click</button>
+    <button class="btn btn-danger">Click</button>
+    <button class="btn btn-outline-success">Click</button>
+    <button class="btn btn-outline-warning btn-lg" disabled>Click</button>
+    <button class="btn btn-outline-info btn-sm">Click</button>
+    <a
+        href="https://google.com"
+        class= 'btn btn-outline-info' > google
+    </a>
+    <hr>
+    <h3>Badge</h3>
+    <hr>
+    <h6>Notifications <span class="badge bg-danger">20+</span></h6>
+    <br/>
+    <button class="btn btn-primary">Notifications<span class="badge bg-dark">20+</span></button>
+    <br/>
+    <br/>
+    <button class="btn btn-primary position-relative">Notifications<span class=" position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">99+</span></button>
+    <hr>
+    <h3>Alert</h3>
+    <hr>
+    <div class="alert alert-danger">Download page </div>
+    <br/>
+    <div class="alert alert-success">Congragulations! Your score is 50/50 </div>
+    <br/>
+    <div class="alert alert-warning alert-dismissible">
+        This is a warning message!
+        <button class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+    <hr>
+    <h3>Group Button</h3>
+    <hr>
+    <div class="btn-group">
+        <button class="btn btn-primary">All</button>
+        <button  class="btn btn-primary">Read</button>
+        <button class="btn btn-primary">Unread</button>
+    </div>
+    <br/>
+    <br/>
+    <div class="btn-group">
+        <button class="btn btn-outline-primary">All</button>
+        <button  class="btn btn-outline-primary">Read</button>
+        <button class="btn btn-outline-primary">Unread</button>
+    </div>
+    <hr>
+    <h3>Card</h3>
+    <hr>
+    <div class="card" style="width: 18rem;">
+        <img src="../Mini-Project/photo.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Photography</h5>
+          <p class="card-text">It is an art to capture important thing.</p>
+          <a href="#" class="btn btn-primary">Know more</a>
+        </div>
+    </div>
+    <hr>
+    <h3>Grid</h3>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-4 bg-success">one</div>
+            <div class="col-8 bg-warning">two</div>
+        </div>
+    </div>
+    <hr>
+    <h3>Form</h3>
+    <hr>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input id="email" class="form-control" type="text" placeholder="Email"/>
+        <br/>
+        <select class="form-select">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option> 
+        </select>
+        <br/>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="agree">
+            <label class="form-check-label" for="agree">
+              Agree
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="s_argee" checked>
+            <label class="form-check-label" for="s_agree">
+              I strongly agree
+            </label>
+          </div>
+          <br/>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radioDisabled" id="radioDisabled">
+            <label class="form-check-label" for="radioDisabled">
+              Disabled radio
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radioDisabled" id="radioCheckedDisabled" checked>
+            <label class="form-check-label" for="radioCheckedDisabled">
+              Disabled checked radio
+            </label>
+          </div>
+
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
