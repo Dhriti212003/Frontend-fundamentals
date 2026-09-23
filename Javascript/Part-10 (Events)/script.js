@@ -1,3 +1,5 @@
+// mouse events
+
 let btn = document.querySelector("button");
 
 btn.addEventListener("click",function(){
@@ -21,3 +23,21 @@ function getRandomColor(){
     return color;
     
 }
+
+// keyboard event
+
+let input = document.createElement("input")
+document.querySelector("form").append(input);
+input.addEventListener("keydown",function(){
+    console.log("Key was pressed");
+});
+
+
+let form = document.querySelector("form");
+form.addEventListener("submit",function(){
+    event.preventDefault();
+    let  inp = document.querySelector("input");
+    console.dir(inp);
+    console.log(inp.value);
+    console.log("form submitted");
+})
